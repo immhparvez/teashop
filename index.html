@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/cd9127c157.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container mx-auto">
+        <div class="hero">
+          <div class="hero-content grid grid-cols-1 md:grid-cols-2 justify-between items-center">
+            <div>
+              <h1 class="text-4xl xl:text-7xl font-extrabold">
+                It's good <br />
+                tea time at The<br />
+                Tea House
+              </h1>
+              <p class="py-6 font-light text-lg">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                assumenda excepturi exercitationem quasi. In deleniti eaque aut
+                repudiandae et a id nisi.
+              </p>
+              <button class="btn btn-primary">Explore More</button>
+            </div>
+            <div>
+              <img src="images/banner.png" class="w-full rounded-lg" />
+              <!-- rating badge -->
+              <div class="rounded -mt-20 drop-shadow-lg p-5 w-60 bg-white flex items-center gap-4">
+                <i class="fa-solid fa-star text-4xl text-amber-400"></i>
+                <div>
+                  <h3 class="text-3xl font-extrabold">5.00</h3>
+                  <p class="text-base">Trust Pilot Ratings</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="js/tailwind.config.js"></script>
+  </body>
+</html>
