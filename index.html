@@ -27,6 +27,15 @@
         },
       };
     </script>
+    <style>
+      .gra {
+        border-radius: 10px;
+        background: var(
+          --linear,
+          linear-gradient(270deg, #f00 0%, #ff8938 100%)
+        );
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -124,12 +133,14 @@
         </div>
       </section>
       <!-- Freshly Presented start -->
-      <section>
+      <section class="">
         <div class="container mx-auto"></div>
       </section>
       <!-- Freshly Presented End -->
       <section class="my-20">
-        <div class="container mx-auto items-center flex px-4 flex-col-reverse lg:flex-row gap-12">
+        <div
+          class="container mx-auto items-center flex px-4 flex-col-reverse lg:flex-row gap-12"
+        >
           <div class="grid gap-8 flex-1 grid-cols-1 lg:grid-cols-2">
             <div
               class="border rounded-xl h-36 bg-gradient-to-r from-red-200 to-amber-100"
@@ -148,7 +159,7 @@
               class="border rounded-xl h-36 bg-gradient-to-r from-red-200 to-amber-100"
             ></div>
           </div>
-          <div class="flex-1 space-y-4 ">
+          <div class="flex-1 space-y-4">
             <h3 class="font-extrabold text-3xl lg:text-5xl text-[new-black]">
               Great Tea, Freshly Presented
             </h3>
@@ -169,6 +180,39 @@
               Premium Quality that makes tea more elegant and more durable when
               you use it.
             </p>
+          </div>
+        </div>
+      </section>
+      <!-- super client section start -->
+      <section>
+        <div class="container"></div>
+      </section>
+      <!-- super client section end -->
+      <section class="mb-20">
+        <div
+          class="container p-20 gap-14 flex border rounded-xl mx-auto gra"
+        >
+          <div class="flex-1 space-y-5">
+            <h3 class="font-extrabold text-5xl text-white">Meet Our Super Clients</h3>
+            <p class="font-medium text-white">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable.
+            </p>
+            <button class="btn">Show All</button>
+          </div>
+          <!-- review section -->
+          <div class="flex-1">
+            <div class="p-10 space-y-3 relative shadow-xl bg-white border rounded-xl">
+              <img src="images/client.png" class="absolute -left-7 -top-5" alt="" />
+              <p>
+                We are providing the best and suitable home insurance services
+                for the people who are interested to treatment
+              </p>
+              <h4 class="font-bold">Ilham Yuda</h4>
+              <p class="font-medium">Businessman</p>
+            </div>
           </div>
         </div>
       </section>
